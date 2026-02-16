@@ -7,9 +7,10 @@ import { SessionsModule } from './sessions/sessions.module';
 import { RealtimeModule } from './realtime/realtime.module';
 import { StatsModule } from './stats/stats.module';
 import { InfraModule } from './infra/infra.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
-  imports: [AuthModule, RoomsModule, SessionsModule, RealtimeModule, StatsModule, InfraModule],
+  imports: [HealthModule, AuthModule, RoomsModule, SessionsModule, RealtimeModule, StatsModule, InfraModule],
   controllers: [AppController],
   providers: [AppService],
 })
